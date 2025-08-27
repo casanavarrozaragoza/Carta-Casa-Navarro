@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Navarro · Carta</title>
+  <meta name="description" content="Cafetería Casa Navarro · Carta, horario y ubicación.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Casa Navarro</h1>
+      <nav class="nav">
+        <a href="#carta">Carta</a>
+        <a href="#horario">Horario</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Tu cafetería de confianza en Zaragoza</h2>
+      <p>Desayunos, platos caseros y raciones. Aquí puedes ver y descargar nuestra carta actualizada.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#carta">Ver carta</a>
+        <a class="btn outline" href="assets/carta.pdf" target="_blank" rel="noopener">Descargar PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="carta" class="section">
+    <div class="container">
+      <h3>Nuestra carta</h3>
+      <p>Puedes verla online o descargarla en PDF. Si no se carga el visor, pulsa en “Descargar PDF”.</p>
+      <div class="pdf-frame">
+        <object data="assets/carta.pdf" type="application/pdf" width="100%" height="100%">
+          <p>No se puede mostrar el PDF en tu navegador. <a href="assets/carta.pdf" target="_blank" rel="noopener">Descargar PDF</a></p>
+        </object>
+      </div>
+      <p class="nota">¿Necesitas carta sin gluten o sin lactosa? Pregunta al personal: tenemos alternativas.</p>
+    </div>
+  </section>
+
+  <section id="horario" class="section alt">
+    <div class="container">
+      <h3>Horario</h3>
+      <ul class="hours">
+        <li><strong>Lunes a Viernes:</strong> 08:00–16:00</li>
+        <li><strong>Sábado:</strong> 09:00–13:00</li>
+        <li><strong>Domingo:</strong> Cerrado</li>
+      </ul>
+      <p class="nota">* Ajusta estos horarios en el HTML si cambian.</p>
+    </div>
+  </section>
+
+  <section id="ubicacion" class="section">
+    <div class="container">
+      <h3>¿Dónde estamos?</h3>
+      <p><strong>Dirección:</strong> <span>— añade aquí la dirección exacta —</span></p>
+      <p><a class="btn outline" href="https://maps.google.com/?q=Casa%20Navarro%20Zaragoza" target="_blank" rel="noopener">Abrir en Google Maps</a></p>
+    </div>
+  </section>
+
+  <section id="contacto" class="section alt">
+    <div class="container">
+      <h3>Contacto</h3>
+      <p><strong>Teléfono:</strong> — añade aquí —</p>
+      <p><strong>Email:</strong> — añade aquí —</p>
+      <div class="badges">
+        <a class="badge" href="#" aria-disabled="true">Glovo (próximamente)</a>
+        <a class="badge" href="#" aria-disabled="true">Uber Eats (próximamente)</a>
+      </div>
+      <p class="nota">Sustituye los enlaces cuando estén activos.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Casa Navarro · Zaragoza</p>
+      <p class="small">Colores corporativos: dorado y azul · Esta web está pensada para alojamiento gratuito (Netlify Drop o GitHub Pages).</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
